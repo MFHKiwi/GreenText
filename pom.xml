@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>me.MFHKiwi</groupId>
+  <artifactId>GreenText</artifactId>
+  <version>1.1</version>
+  <name>GreenText</name>
+  <description>A 4chan green text plugin for CraftBukkit 1060</description>
+  <build>
+  	<defaultGoal>clean package</defaultGoal>
+  	<sourceDirectory>${basedir}/src</sourceDirectory>
+  	<resources>
+  		<resource>
+  			<directory>${basedir}/resources</directory>
+  		</resource>
+  	</resources>
+  	<plugins>
+  		<plugin>
+  			  <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>1.8</source>
+                  <target>1.8</target>
+              </configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+  <repositories>
+    <repository>
+        <id>chew-jenkins</id>
+        <url>https://jenkins.chew.pw/plugin/repository/everything</url>
+    </repository>
+  </repositories>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.bukkit</groupId>
+  		<artifactId>bukkit</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>jar</type>
+  		<scope>provided</scope>
+  	</dependency>
+  </dependencies>
+</project>
