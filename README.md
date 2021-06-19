@@ -1,5 +1,5 @@
 # GreenText
-A 4chan green text plugin for CraftBukkit 1060
+A green text plugin for CraftBukkit 1060
 
 ### To build:
  1. Clone this repository.
